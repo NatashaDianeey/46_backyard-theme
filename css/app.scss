@@ -1,0 +1,111 @@
+$blanco: #fff;
+$negro: #000;
+$azul: #3CB1F6;
+$break-small: 320px;
+
+nav {
+	.navbar-blanco {
+		background-color : $blanco;
+	}
+	@media screen and (max-width: $break-small) {
+		.navbar-brand{
+			float: none;
+		}
+	}
+	li{
+		.menu{
+			color: $negro;
+			&:hover{
+				background-color: #3A808D;
+				border-radius: 5px;
+				color: $blanco;
+			}
+		}
+	}
+}
+
+#logo {
+	width: 40%;
+	@media screen and (max-width: $break-small) {
+		width: 50%;
+		padding: 2%;
+	}
+}
+
+li.menu {
+	color : $negro; 
+}
+.mgt-5 {
+	margin-top: 5%; 
+}
+.mgt-10 {
+	margin-top: 10%; 
+}
+.pd5 {
+	padding: 5%;
+}
+#bg-fondo {
+	background-image: url("../images/fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	color: $blanco;
+	.opacidad {
+		background-color: rgba(0,0,0,.4);
+	}	
+}
+.borde {
+	border-color: $azul;
+	border-radius: 20px;
+}
+#caja {
+	width: 50%;
+	@extend .pd5;
+	
+	.btn-azul {
+		background-color: $azul;
+		color: $blanco;
+		@extend .borde;
+		&:hover{
+			background-color: $blanco;
+			color: $azul;
+		}
+	}
+	@media screen and (max-width: $break-small) {
+		width: 100%;
+	}
+}
+.borde-azul {
+	background-color: transparent;
+	color: $azul;
+	@extend .borde;
+	&:hover{
+		background-color: $azul;
+		color: $blanco;
+	}
+}
+#optimize{
+	span{
+		color: $azul;
+	}
+}
+#recreate{
+	background-color: #ECECEC;
+}
+footer {
+	span{
+		color: $azul;
+	}
+	.fa{
+		border-radius: 50px;
+		border: 1px solid;
+		padding: 1%;
+
+		@media screen and (max-width: $break-small) {
+			padding: 4%;
+		}
+	}
+	p{
+		margin-top: 2%; 
+	}
+}
